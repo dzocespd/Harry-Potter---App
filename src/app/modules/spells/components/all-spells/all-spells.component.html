@@ -1,0 +1,15 @@
+<div>
+    <ng-container *ngFor="let spell of spellsReposnse">
+        <ul>
+            <li>
+                <strong>Spell Name: </strong> {{spell.spell}}
+            </li>
+            <li>
+                <strong>Spell Type: </strong> {{spell.type}}
+            </li>
+            <li>
+                <strong>Spell Effect: </strong>{{spell.effect}}
+            </li>
+        </ul>
+    </ng-container>
+</div>

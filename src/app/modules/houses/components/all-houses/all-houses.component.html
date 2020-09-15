@@ -1,0 +1,13 @@
+<div>
+    <h2>Harry Potter Houses</h2>
+    <br />
+    <ng-container *ngFor="let house of housesResponse">
+        <ul>
+            <li>
+                <a routerLink="{{house._id}}">{{house.name}}</a>                       
+            </li>
+        </ul>
+    </ng-container>
+</div>
+
+<!-- <app-single-house></app-single-house> -->

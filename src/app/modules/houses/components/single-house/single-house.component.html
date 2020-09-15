@@ -1,0 +1,21 @@
+<div>
+    <ng-container *ngFor="let sHouse of houseRespose">
+        <ul>
+            <h3>
+                House {{sHouse.name}}
+            </h3>
+            <li>
+                <strong>House Founder: </strong> {{sHouse.founder}}
+            </li>
+            <li>
+                <strong>House Mascot: </strong> {{sHouse.mascot}}
+            </li>
+            <li>
+                <strong>House Ghost: </strong> {{sHouse.houseGhost}}
+            </li>
+            <li>
+                <strong>Head of House: </strong> {{sHouse.headOfHouse}}
+            </li>
+        </ul>
+    </ng-container>
+</div>

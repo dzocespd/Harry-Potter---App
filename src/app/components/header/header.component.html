@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" *ngFor="let item of navMenu">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="item.url">{{item.title}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</nav>
+
+
+<app-nav-menu></app-nav-menu>

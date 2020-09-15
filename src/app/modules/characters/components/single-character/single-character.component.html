@@ -1,0 +1,10 @@
+<div>
+    <ng-container *ngFor="let char of charArr" >
+        <ul>
+            <h3>{{char.name}}</h3>
+            <li><strong>Character Role:</strong> {{char.role}}</li>
+            <li><strong>Character House:</strong> {{char.house || char.species}}</li>
+            <li><strong>Character School:</strong> {{char.school || char/bloodStatus}}</li>
+        </ul>
+    </ng-container>
+</div>

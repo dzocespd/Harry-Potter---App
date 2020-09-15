@@ -1,0 +1,11 @@
+<div>
+    <h3>Harry Potter Charactes</h3>
+    <br />
+    <ng-container *ngFor="let char of charResponse">
+        <ul>
+            <li>
+                <a routerLink="{{char._id}}">{{char.name}}</a>
+            </li>
+        </ul>
+    </ng-container>
+</div>
