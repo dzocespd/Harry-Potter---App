@@ -1,11 +1,17 @@
 <div>
     <h3>Harry Potter Charactes</h3>
     <br />
-    <ng-container *ngFor="let char of charResponse">
+    <ng-container *ngFor="let char of paginateChars">
         <ul>
             <li>
                 <a routerLink="{{char._id}}">{{char.name}}</a>
             </li>
         </ul>
     </ng-container>
+    
+    <ng-container *ngIf="paginateChars">
+        <button (click)="prevPage()">Previous</button>
+        <button (click)="nextPage()">Next</button>
+    </ng-container>
+
 </div>

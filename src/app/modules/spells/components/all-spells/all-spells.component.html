@@ -1,5 +1,5 @@
 <div>
-    <ng-container *ngFor="let spell of spellsReposnse">
+    <ng-container *ngFor="let spell of paginateSpells">
         <ul>
             <li>
                 <strong>Spell Name: </strong> {{spell.spell}}
@@ -11,5 +11,10 @@
                 <strong>Spell Effect: </strong>{{spell.effect}}
             </li>
         </ul>
+    </ng-container>
+
+    <ng-container *ngIf="paginateSpells">
+        <button (click)="prevPage()">Previous</button>
+        <button (click)="nextPage()">Next</button>
     </ng-container>
 </div>
